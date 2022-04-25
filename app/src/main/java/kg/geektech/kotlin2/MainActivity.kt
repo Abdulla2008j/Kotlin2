@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
     private fun submit() {
         val submit = binding.urlLink.text.toString()
         if (submit.isEmpty()){
-            showToast("Пусто")
+            showToast(getString(R.string.toast))
         }else{
             image.add(submit)
             binding.urlLink.setText("")
